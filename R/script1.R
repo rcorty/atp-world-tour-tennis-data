@@ -54,13 +54,20 @@ rankings$ranking_points %>% hist
 rankings %>% 
     arrange(desc(ranking_points)) %>% 
     select(week_year, ranking_points, player_slug) %>% 
+<<<<<<< HEAD
     print(n = 40)
+=======
+    print(n = 70)
+>>>>>>> 6e3acae9d48317fb0b0eac27e25413bd876c08fe
 
 read_csv(file = 'csv/5_players/player_overviews_UNINDEXED.csv',
          col_names = read_lines(file = 'csv/5_players/player_overviews_column_titles.txt')) %>% 
     glimpse() %>% 
     into(players)
+<<<<<<< HEAD
 
 
 
 match_scores %>% glimpse()
+=======
+>>>>>>> 6e3acae9d48317fb0b0eac27e25413bd876c08fe
